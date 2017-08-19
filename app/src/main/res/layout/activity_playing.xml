@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_playing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPage"
+    tools:context=".Playing">
+
+    <RelativeLayout
+
+        android:layout_marginTop="69dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_corner"
+        android:elevation="4dp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/btnGroup"
+            android:paddingTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtQuestion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1/30"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:max="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/question"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ff8a50"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Question"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                />
+
+            <Button
+                android:id="@+id/btnAnswerA"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ff8a80"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Answer A"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                />
+
+            <Button
+                android:id="@+id/btnAnswerB"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ff8a80"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Answer B"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                />
+
+            <Button
+                android:id="@+id/btnAnswerC"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ff8a80"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Answer C"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                />
+
+            <Button
+                android:id="@+id/btnAnswerD"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ff8a80"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Answer D"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
